@@ -1,0 +1,63 @@
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 15px;
+}
+
+.editor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+canvas {
+    background: #222;
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.panel {
+    width: 300px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="range"], input[type="file"] {
+    width: 100%;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    background: #03dac5;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00bfa5;
+}
+
+
+
+ 

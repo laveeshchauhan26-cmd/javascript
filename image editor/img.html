@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Image Editor</title>
+    <link rel="stylesheet" href="img.css">
+</head>
+<body>
+
+<h1>Advanced Image Editor (Major Project)</h1>
+
+<div class="editor">
+
+    <canvas id="canvas"></canvas>
+
+    <div class="panel">
+        <input type="file" id="upload" accept="image/*">
+
+        <label>Brightness</label>
+        <input type="range" id="brightness" min="-100" max="100" value="0">
+
+        <label>Contrast</label>
+        <input type="range" id="contrast" min="-100" max="100" value="0">
+
+        <label>Saturation</label>
+        <input type="range" id="saturation" min="-100" max="100" value="0">
+
+        <label>Blur</label>
+        <input type="range" id="blur" min="0" max="5" value="0">
+
+        <div class="buttons">
+            <button onclick="applyPreset('bw')">B & W</button>
+            <button onclick="applyPreset('vintage')">Vintage</button>
+            <button onclick="applyPreset('warm')">Warm</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="rotateImage()">Rotate</button>
+            <button onclick="resetImage()">Reset</button>
+            <button onclick="downloadImage()">Download</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="img.js"></script>
+</body>
+</html>
+
+
+
+
+ 

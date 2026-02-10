@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="ev.css" />
+</head>
+
+<body>
+
+  <div class="container">
+     <h2>Email & Password Validator</h2>
+     
+     <form autocomplete="off" id ="loginform"></form>
+       <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <small class="error" id="email-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        <small class="error" id="password-error"></small>
+      </div>
+
+      <button type="submit">validate</button>
+    </form>
+
+    <div id ="resultmessage"></div>
+    </div>
+
+  <script src="ev.js"></script>
+</body>
+
+</html>
